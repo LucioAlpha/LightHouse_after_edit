@@ -42,7 +42,7 @@ font-family: 'Roboto', sans-serif;
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size:14px;
-	color:#333; /* Darker text color for better contrast */
+	color:#a09e9c;
     text-transform:initial;
     max-width:1920px;
     margin:0 auto;
@@ -60,7 +60,7 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#222; /* Darker heading color */
+	color:#343a3f;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
@@ -94,12 +94,6 @@ html,body{height: 100%;}
   -o-transition: opacity 0.3s 0.3s ease; 
   transition: opacity 0.3s 0.3s ease; 
   opacity: 0;
-}
-
-/* Improve focus styles for accessibility */
-a:focus, button:focus {
-    outline: 2px dashed #ff545a;
-    outline-offset: 2px;
 }
 
 /* section-header */
@@ -217,7 +211,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
+.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
 /*.nav li*/
 
 /*.menu-ui-design*/
@@ -249,7 +243,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 --------------------------------------*/
 .welcome-hero {
     position: relative;
-    background:url(../images/welcome-hero/banner.webp)no-repeat;
+    background:url(../images/welcome-hero/banner.jpg)no-repeat;
     background-position:center;
     background-size:cover;
     text-align: center;
@@ -583,7 +577,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .explore-map-icon a svg:hover{color: #f63138;}
 .single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover{color: #00c437;}
-single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
+.single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
 
 /*-------------------------------------
         8. Reviews
@@ -685,7 +679,7 @@ single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
     position:relative;
     display: flex;
     align-items: center;
-    background:url(../../assets/images/counter/counter-banner.webp)no-repeat fixed;
+    background:url(../../assets/images/counter/counter-banner.jpg)no-repeat fixed;
     background-position:center;
     background-size:cover;
     padding:127px 0 120px;
@@ -739,7 +733,7 @@ single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
 }
 .single-blog-item-txt {padding:  25px 28px 27px;}
 .single-blog-item-txt h2 a {text-transform:  initial;line-height: 1.8;}
-single-blog-item-txt h4 {
+.single-blog-item-txt h4 {
     font-size:  14px;
     color:  #8f949d;
     font-weight:  400;
@@ -953,13 +947,5 @@ single-blog-item-txt h4 {
 @keyframes example {
     0%   {bottom:0px;}
     100%  {bottom:7px;}
-}
-
-/* Optimize animations for reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
 }
 /*========================Thank you=================

@@ -1,4 +1,3 @@
-
 /* ==============================================================
 
 Template name : Bootsnav - Multi Purpose Header
@@ -1281,7 +1280,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     /* Tabs
     =================================*/ 
     nav.navbar.bootsnav .megamenu-content.tabbed{
-        padding-left: 0;
+        padding-left: 0 !mportant;
     }
     
     nav.navbar.bootsnav .tabbed > li{
