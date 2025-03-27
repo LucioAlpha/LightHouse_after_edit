@@ -18,33 +18,45 @@
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
        
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="preload" href="assets/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <!--linear icon css-->
-		<link rel="stylesheet" href="assets/css/linearicons.css">
+		<link rel="preload" href="assets/css/linearicons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 		<!--animate.css-->
         <link rel="stylesheet" href="assets/css/animate.css">
 
 		<!--flaticon.css-->
-        <link rel="stylesheet" href="assets/css/flaticon.css">
+        <link rel="preload" href="assets/css/flaticon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 		<!--slick.css-->
-        <link rel="stylesheet" href="assets/css/slick.css">
-		<link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="preload" href="assets/css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<link rel="preload" href="assets/css/slick-theme.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		
         <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="preload" href="assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 		
 		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+		<link rel="preload" href="assets/css/bootsnav.css" as="style" onload="this.onload=null;this.rel='stylesheet'">	
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         
         <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         
+        <noscript>
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link rel="stylesheet" href="assets/css/slick.css">
+            <link rel="stylesheet" href="assets/css/slick-theme.css">
+            <link rel="stylesheet" href="assets/css/responsive.css">
+            <link rel="stylesheet" href="assets/css/linearicons.css">
+            <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+            <link rel="stylesheet" href="assets/css/flaticon.css">
+            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+            <link rel="stylesheet" href="assets/css/bootsnav.css">
+        </noscript>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		
@@ -175,7 +187,7 @@
 						</div>
 					</div>
 					<div class="welcome-hero-serch">
-						<button class="welcome-hero-btn" onclick="window.location.href='#'">
+						<button class="welcome-hero-btn" onclick="window.location.href='#'" aria-label="Search">
 							 search  <i data-feather="search"></i> 
 						</button>
 					</div>
@@ -312,7 +324,7 @@
 						<div class=" col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e1.webp" alt="explore image">
+									<img src="assets/images/explore/e1.webp" alt="Tommy Helfinger Bar" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -361,7 +373,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
+												<button class="close-btn" onclick="window.location.href='#'" aria-label="Close Now">close now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -378,7 +390,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e2.webp" alt="explore image">
+									<img src="assets/images/explore/e2.webp" alt="Swim and Dine Resort" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -427,7 +439,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn open-btn" onclick="window.location.href='#'">open now</button>
+												<button class="close-btn open-btn" onclick="window.location.href='#'" aria-label="Open Now">open now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -444,7 +456,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e3.webp" alt="explore image">
+									<img src="assets/images/explore/e3.webp" alt="Europe Tour" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -493,7 +505,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
+												<button class="close-btn" onclick="window.location.href='#'" aria-label="Close Now">close now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -510,7 +522,7 @@
 						<div class=" col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e4.webp" alt="explore image">
+									<img src="assets/images/explore/e4.webp" alt="Banglow with Swimming Pool" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">most view</button>
 										<div class="single-explore-image-icon-box">
@@ -559,7 +571,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
+												<button class="close-btn" onclick="window.location.href='#'" aria-label="Close Now">close now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -576,7 +588,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e5.webp" alt="explore image">
+									<img src="assets/images/explore/e5.webp" alt="Vintage Car Expo" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">featured</button>
 										<div class="single-explore-image-icon-box">
@@ -625,7 +637,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn open-btn" onclick="window.location.href='#'">open now</button>
+												<button class="close-btn open-btn" onclick="window.location.href='#'" aria-label="Open Now">open now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -642,7 +654,7 @@
 						<div class="col-md-4 col-sm-6">
 							<div class="single-explore-item">
 								<div class="single-explore-img">
-									<img src="assets/images/explore/e6.webp" alt="explore image">
+									<img src="assets/images/explore/e6.webp" alt="Thailand Tour" loading="lazy">
 									<div class="single-explore-img-info">
 										<button onclick="window.location.href='#'">best rated</button>
 										<div class="single-explore-image-icon-box">
@@ -691,7 +703,7 @@
 									<div class="explore-open-close-part">
 										<div class="row">
 											<div class="col-sm-5">
-												<button class="close-btn" onclick="window.location.href='#'">close now</button>
+												<button class="close-btn" onclick="window.location.href='#'" aria-label="Close Now">close now</button>
 											</div>
 											<div class="col-sm-7">
 												<div class="explore-map-icon">
@@ -1101,7 +1113,6 @@
 				<div class="return-to-top">
 					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
 				</div>
-				
 			</div><!--/.scroll-Top-->
 			
         </footer><!--/.footer-->

@@ -1,10 +1,11 @@
+
+
 @media screen and (max-width:1680px){
 
 }/*max-width:1680px*/
 @media screen and (max-width:1440px){
-	.single-welcome-hero {height: 807px;}
-}/*max-width:1440px*/
 
+} /* max-width:1440px */
 @media screen and (max-width:1199px){
 	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 10px;}
 	

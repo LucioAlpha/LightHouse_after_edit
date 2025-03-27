@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Linearicons-Free';
 	src:url('../fonts/Linearicons-Free.eot?w118d');
@@ -532,5 +533,4 @@
 	content: "\e8a8";
 }
 .lnr-pointer-left:before {
-	content: "\e8a9";
 }
