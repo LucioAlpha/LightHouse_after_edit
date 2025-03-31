@@ -42,7 +42,7 @@ font-family: 'Roboto', sans-serif;
 body{
 	font-family: 'Poppins', sans-serif;
 	font-size:14px;
-	color:#7e7d7c;
+	color:#000000; /* Black font color for maximum contrast */
     text-transform:initial;
     max-width:1920px;
     margin:0 auto;
@@ -53,14 +53,14 @@ button, a {
     min-width: 48px; /* 確保觸控目標的最小寬度 */
     min-height: 48px; /* 確保觸控目標的最小高度 */
     margin: 8px; /* 增加間距以避免目標過於接近 */
-    /* color: #ffffff; 確保按鈕文字顏色為白色 */
+    color: #000000; /* Black font color for buttons */
     /* background-color: #0056b3; 提高背景顏色的對比度 */
 }
 
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
-	color: #343a3f;
+	color: #000000; /* Black font color for links */
 	font-size:16px;
 	padding:0;
     font-weight: 500;
@@ -68,17 +68,17 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#222222; /* 使用更深的文字顏色以提高對比度 */
+	color:#000000; /* Black font color for headings */
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
 }
 h2, h3, h4 {
-    color: #1a1a1a; /* 提高文字顏色的對比度 */
+    color: #000000; /* Black font color for headings */
 }
 p {
 	margin: 0;
-	color:#767f86;
+	color:#000000; /* Black font color for paragraphs */
 	font-size:14px;
     line-height: 1.8;
     text-transform: initial;
@@ -123,6 +123,9 @@ html,body{height: 100%;}
 .section-header h2 span{text-transform: lowercase;}
 .section-header p{
     font-size:16px;
+}
+.section-header p {
+    color: #000000; /* Black font color for paragraphs */
 }
 /* section-header */
 .fix{position: relative;clear: both;}
@@ -329,7 +332,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     justify-content:  center;
     align-items:  center;
     font-size:  14px;
-    color:  #ffffff; /* 確保文字顏色為白色 */
+    color:  #000000; /* Black font color for buttons */
     width:  170px;
     height:  70px;
     background-color: #0056b3; /* 提高背景顏色的對比度 */
@@ -436,7 +439,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     height: 35px;
     font-size: 12px;
     background-color: #0056b3; /* 提高背景顏色的對比度 */
-    color: #ffffff; /* 確保文字顏色為白色 */
+    color: #000000; /* Black font color for buttons */
     border: 1px solid #d3d6d9;
     border-radius: 3px;
 }
@@ -576,12 +579,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 20px;
 }
 .close-btn {
-    color: #ffffff; /* 確保文字顏色為白色 */
+    color: #000000; /* Black font color for buttons */
     text-transform: capitalize;
     background-color: #0056b3; /* 提高背景顏色的對比度 */
 }
 .close-btn.open-btn {
-    color: #ffffff; /* 確保文字顏色為白色 */
+    color: #000000; /* Black font color for buttons */
     background-color: #0056b3; /* 提高背景顏色的對比度 */
 }
 .explore-map-icon{text-align: right;}
@@ -641,11 +644,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 11px;
 }
 .testimonial-person h2 {
-    color: #505866;
+    color: #000000; /* Black font color for testimonials */
     font-size: 18px;
 }
 .testimonial-person h4 {
-    color: #a2a5ab;
+    color: #000000; /* Black font color for testimonials */
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px;
@@ -661,7 +664,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 18px;
 }
 .testimonial-comment p{
-    color: #8d939e;
+    color: #000000; /* Black font color for testimonials */
     font-size: 14px;
     font-weight: 300;
 }/* testimonial-comment */
@@ -719,14 +722,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .statistics-content{
     display: flex;
     justify-content: center;
-    color:#fff;
+    color:#000000; /* Black font color for statistics */
     font-size:60px;
 }
 .statistics-content span {
     margin-left: 5px;
 }
 .single-ststistics-box h3{
-    color:#fff;
+    color:#000000; /* Black font color for statistics */
     font-size:24px;
     text-transform:capitalize;
     font-weight: 500;
@@ -748,10 +751,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     transition: .3s;
 }
 .single-blog-item-txt {padding:  25px 28px 27px;}
-.single-blog-item-txt h2 a {text-transform:  initial;line-height: 1.8;}
+.single-blog-item-txt h2 a {
+    text-transform:  initial;
+    line-height: 1.8;
+    color: #000000; /* Black font color for blog section */
+}
 .single-blog-item-txt h4 {
     font-size:  14px;
-    color:  #8f949d;
+    color:  #000000; /* Black font color for blog section */
     font-weight:  400;
     margin: 12px 0 20px;
 }
@@ -783,9 +790,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-size:24px;
     font-weight: 500;
     text-transform: uppercase;
+    color: #000000; /* Black font color for subscription section */
 }
 .subscribe-title p{
-    color:#7b8088;
+    color:#000000; /* Black font color for subscription section */
     font-size:16px;
     font-weight: 500;
     margin-top: 28px;
@@ -806,7 +814,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     height: 60px;
     padding-left:30px;
     font-size: 16px;
-    color: #a5adb3;
+    color: #000000; /* Black font color for subscription section */
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
@@ -869,7 +877,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .footer-menu ul.footer-menu-item{text-align: right;}
 .footer-menu ul.footer-menu-item li{display: inline-block;}
 .footer-menu ul.footer-menu-item li a {
-    color: #ffffff; /* 確保文字顏色為白色 */
+    color: #000000; /* Black font color for footer text */
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -884,7 +892,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     border-top: 1px solid #e1e5eb;
 }
 .hm-footer-copyright p,.hm-footer-copyright p a {
-    color: #ffffff; /* 確保文字顏色為白色 */
+    color: #000000; /* Black font color for footer text */
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
@@ -965,4 +973,3 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
-/*========================Thank you=================
