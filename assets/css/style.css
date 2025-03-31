@@ -39,28 +39,20 @@ font-family: 'Roboto', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: #000000; /* Black font color for maximum contrast */
-    text-transform: initial;
-    max-width: 1920px;
-    margin: 0 auto;
-    overflow-x: hidden;
-}
-
-button, a {
-    min-width: 48px; /* Ensure minimum touch target size */
-    min-height: 48px; /* Ensure minimum touch target size */
-    margin: 8px; /* Add spacing to avoid targets being too close */
-    color: #000000; /* Black font color for buttons */
-    background-color: #0056b3; /* Improve background color contrast */
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:14px;
+	color:black;
+    text-transform:initial;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
 }
 
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
-	color: #000000; /* Black font color for links */
+	color: #343a3f;
 	font-size:16px;
 	padding:0;
     font-weight: 500;
@@ -68,17 +60,14 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#000000; /* Black font color for headings */
+	color:#343a3f;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
 }
-h2, h3, h4 {
-    color: #000000; /* Black font color for headings */
-}
 p {
 	margin: 0;
-	color:#000000; /* Black font color for paragraphs */
+	color:black;
 	font-size:14px;
     line-height: 1.8;
     text-transform: initial;
@@ -124,9 +113,6 @@ html,body{height: 100%;}
 .section-header p{
     font-size:16px;
 }
-.section-header p {
-    color: #000000; /* Black font color for paragraphs */
-}
 /* section-header */
 .fix{position: relative;clear: both;}
 /*=============Style css=========*/
@@ -154,7 +140,7 @@ html,body{height: 100%;}
 .select-opt select {
     border: none;
     cursor:pointer;
-    color:#a7b0ba;
+    color:black;
     font-size: 12px;
     font-weight: 300;
 }
@@ -204,7 +190,7 @@ nav.navbar.bootsnav {
 
 /*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
-    color: #859098;
+    color: black;
     font-size: 14px;
     font-weight: 500;
     text-transform:uppercase;
@@ -213,11 +199,10 @@ nav.navbar.bootsnav ul.nav > li > a {
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
-    padding: 12px 16px; /* 增加導航連結的觸控區域 */
 }
 nav.navbar.bootsnav ul.nav > li > a {padding:34px 21px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #ff545a;}
-nav.navbar.bootsnav ul.nav > li.active>a {color: #ff545a;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #A80000;}
+nav.navbar.bootsnav ul.nav > li.active>a {color: #A80000;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -226,7 +211,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
+.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
 /*.nav li*/
 
 /*.menu-ui-design*/
@@ -238,7 +223,7 @@ wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #ff545a;
+  background-color: #ff0006;
 }
 /*.menu-ui-design*/
 
@@ -246,11 +231,11 @@ wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #ff545a;
+    border: 1px solid #ff000b;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
+nav.navbar.bootsnav .navbar-toggle i{color: #ff000b;}
 /*.navbar-toggle */
 
 /*-------------------------------------
@@ -317,7 +302,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .single-welcome-hero-form input[type="text"]{
     font-size: 14px;
-    color: #859098;
+    color: black;
     text-transform: capitalize;
     font-weight: 500;
 }
@@ -332,10 +317,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     justify-content:  center;
     align-items:  center;
     font-size:  14px;
-    color:  #000000; /* Black font color for buttons */
+    color:  #fff;
     width:  170px;
     height:  70px;
-    background-color: #0056b3; /* 提高背景顏色的對比度 */
+    background: #A80000;
     text-transform:  capitalize;
     margin-left:  30px;
     border-radius: 3px;
@@ -345,7 +330,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.welcome-hero-btn:hover{/*background: #fd4043;*/background: #f43032;}
+.welcome-hero-btn:hover{/*background: #fd4043;*/background: #A80000;}
 
 .welcome-hero-btn svg {
     width:  14px;
@@ -390,7 +375,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-list-topics-content:hover h2>a,.single-list-topics-content:hover p{color: #fff!important;}
 .single-list-topics-content:hover{
     color: #fff;
-    background:#ff545a;
+    background: #ff0006;
     box-shadow: 0 5px 10px rgba(71,71,71,.4);
 }
 
@@ -438,8 +423,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     width: 100px;
     height: 35px;
     font-size: 12px;
-    background-color: #0056b3; /* 提高背景顏色的對比度 */
-    color: #000000; /* Black font color for buttons */
+    background: transparent;
+    color: black;
     border: 1px solid #d3d6d9;
     border-radius: 3px;
 }
@@ -532,15 +517,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-explore-txt {
     padding: 26px 25px 24px 15px;
 }
-.single-explore-txt.bg-theme-1 .explore-rating{background: #70a9ff;}
-.single-explore-txt.bg-theme-2 .explore-rating{background: #00c61c;}
-.single-explore-txt.bg-theme-3 .explore-rating{background: #ffcc5d;}
-.single-explore-txt.bg-theme-4 .explore-rating{background: #bd70ff;}
-.single-explore-txt.bg-theme-5 .explore-rating{background: #ff7a40;}
+.single-explore-txt.bg-theme-1 .explore-rating{background: #1a3a53;}
+.single-explore-txt.bg-theme-2 .explore-rating{background: #1a4921;}
+.single-explore-txt.bg-theme-3 .explore-rating{background: #614d21;}
+.single-explore-txt.bg-theme-4 .explore-rating{background: #3d1c59;}
+.single-explore-txt.bg-theme-5 .explore-rating{background: #653723;}
 
 .explore-rating-price,.explore-rating-price a {
     font-size: 12px;
-    color: #777f85;
+    color: black;
     text-transform: capitalize;
     font-weight: 400;
     margin: 15px 0 20px;
@@ -557,7 +542,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-weight: 500;
     margin-right: 10px;
 }
-.explore-price {color: #f63138;}
+.explore-price {color: #600004;}
 .explore-price-box {
     display: inline-block;
     padding: 0 10px;
@@ -579,20 +564,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 20px;
 }
 .close-btn {
-    color: #000000; /* Black font color for buttons */
+    color: #730004;
     text-transform: capitalize;
-    background-color: #0056b3; /* 提高背景顏色的對比度 */
 }
-.close-btn.open-btn {
-    color: #000000; /* Black font color for buttons */
-    background-color: #0056b3; /* 提高背景顏色的對比度 */
-}
+.close-btn.open-btn {color: #00611b;}
 .explore-map-icon{text-align: right;}
 .explore-map-icon a svg {
     width: 12px;
     height: 14px;
     margin-left: 23px;
-    color: #767f86;
+    color: black;
 }
 .explore-map-icon a svg:hover{color: #f63138;}
 .single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover{color: #00c437;}
@@ -644,11 +625,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 11px;
 }
 .testimonial-person h2 {
-    color: #000000; /* Black font color for testimonials */
+    color: #505866;
     font-size: 18px;
 }
 .testimonial-person h4 {
-    color: #000000; /* Black font color for testimonials */
+    color: #a2a5ab;
     font-size: 14px;
     font-weight: 400;
     margin-top: 10px;
@@ -664,7 +645,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 18px;
 }
 .testimonial-comment p{
-    color: #000000; /* Black font color for testimonials */
+    color: black;
     font-size: 14px;
     font-weight: 300;
 }/* testimonial-comment */
@@ -722,14 +703,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .statistics-content{
     display: flex;
     justify-content: center;
-    color:#000000; /* Black font color for statistics */
+    color:#fff;
     font-size:60px;
 }
 .statistics-content span {
     margin-left: 5px;
 }
 .single-ststistics-box h3{
-    color:#000000; /* Black font color for statistics */
+    color:#fff;
     font-size:24px;
     text-transform:capitalize;
     font-weight: 500;
@@ -751,14 +732,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     transition: .3s;
 }
 .single-blog-item-txt {padding:  25px 28px 27px;}
-.single-blog-item-txt h2 a {
-    text-transform:  initial;
-    line-height: 1.8;
-    color: #000000; /* Black font color for blog section */
-}
+.single-blog-item-txt h2 a {text-transform:  initial;line-height: 1.8;}
 .single-blog-item-txt h4 {
     font-size:  14px;
-    color:  #000000; /* Black font color for blog section */
+    color:  #8f949d;
     font-weight:  400;
     margin: 12px 0 20px;
 }
@@ -790,10 +767,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-size:24px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #000000; /* Black font color for subscription section */
 }
 .subscribe-title p{
-    color:#000000; /* Black font color for subscription section */
+    color:#7b8088;
     font-size:16px;
     font-weight: 500;
     margin-top: 28px;
@@ -814,7 +790,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     height: 60px;
     padding-left:30px;
     font-size: 16px;
-    color: #000000; /* Black font color for subscription section */
+    color: black;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     border-radius:3px;
@@ -877,7 +853,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .footer-menu ul.footer-menu-item{text-align: right;}
 .footer-menu ul.footer-menu-item li{display: inline-block;}
 .footer-menu ul.footer-menu-item li a {
-    color: #000000; /* Black font color for footer text */
+    color: black;
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -892,7 +868,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     border-top: 1px solid #e1e5eb;
 }
 .hm-footer-copyright p,.hm-footer-copyright p a {
-    color: #000000; /* Black font color for footer text */
+    color: black;
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
@@ -914,15 +890,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     transition: .3s;
 }
 .footer-social a {
-    width: 48px; /* 增加社交圖標的寬度 */
-    height: 48px; /* 增加社交圖標的高度 */
-    line-height: 48px; /* 調整行高以居中對齊 */
-    margin: 8px; /* 增加間距 */
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
     background: #eef2f6;
     text-align: center;
     border-radius: 50%;
 }
-.footer-social span {margin-right:15px;margin-left: 0;color: #a5adb3;}
+.footer-social span {margin-right:15px;margin-left: 0;color: black;}
 .footer-social span:hover{color: #ff545a;}
 .footer-social a:hover {background:#ff545a;color: #fff;}
 
@@ -973,3 +948,4 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+/*========================Thank you=================
