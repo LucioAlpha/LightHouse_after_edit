@@ -49,6 +49,14 @@ body{
 	overflow-x:hidden;
 }
 
+button, a {
+    min-width: 48px; /* 確保觸控目標的最小寬度 */
+    min-height: 48px; /* 確保觸控目標的最小高度 */
+    margin: 8px; /* 增加間距以避免目標過於接近 */
+    color: #ffffff; /* 確保按鈕文字顏色為白色 */
+    background-color: #0056b3; /* 提高背景顏色的對比度 */
+}
+
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
@@ -60,10 +68,13 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#343a3f;
+	color:#222222; /* 使用更深的文字顏色以提高對比度 */
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
+}
+h2, h3, h4 {
+    color: #1a1a1a; /* 提高文字顏色的對比度 */
 }
 p {
 	margin: 0;
@@ -199,6 +210,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
+    padding: 12px 16px; /* 增加導航連結的觸控區域 */
 }
 nav.navbar.bootsnav ul.nav > li > a {padding:34px 21px;}
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #ff545a;}
@@ -211,7 +223,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
+wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
 /*.nav li*/
 
 /*.menu-ui-design*/
@@ -317,10 +329,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     justify-content:  center;
     align-items:  center;
     font-size:  14px;
-    color:  #fff;
+    color:  #ffffff; /* 確保文字顏色為白色 */
     width:  170px;
     height:  70px;
-    background:  #ff545a;
+    background-color: #0056b3; /* 提高背景顏色的對比度 */
     text-transform:  capitalize;
     margin-left:  30px;
     border-radius: 3px;
@@ -423,8 +435,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     width: 100px;
     height: 35px;
     font-size: 12px;
-    background: transparent;
-    color: #767f86;
+    background-color: #0056b3; /* 提高背景顏色的對比度 */
+    color: #ffffff; /* 確保文字顏色為白色 */
     border: 1px solid #d3d6d9;
     border-radius: 3px;
 }
@@ -564,10 +576,14 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-top: 20px;
 }
 .close-btn {
-    color: #f63138;
+    color: #ffffff; /* 確保文字顏色為白色 */
     text-transform: capitalize;
+    background-color: #0056b3; /* 提高背景顏色的對比度 */
 }
-.close-btn.open-btn {color: #00c437;}
+.close-btn.open-btn {
+    color: #ffffff; /* 確保文字顏色為白色 */
+    background-color: #0056b3; /* 提高背景顏色的對比度 */
+}
 .explore-map-icon{text-align: right;}
 .explore-map-icon a svg {
     width: 12px;
@@ -853,7 +869,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .footer-menu ul.footer-menu-item{text-align: right;}
 .footer-menu ul.footer-menu-item li{display: inline-block;}
 .footer-menu ul.footer-menu-item li a {
-    color: #859098;
+    color: #ffffff; /* 確保文字顏色為白色 */
     font-size: 14px;
     text-transform: uppercase;
     padding-left: 40px;
@@ -868,7 +884,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     border-top: 1px solid #e1e5eb;
 }
 .hm-footer-copyright p,.hm-footer-copyright p a {
-    color: #a5adb3;
+    color: #ffffff; /* 確保文字顏色為白色 */
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;
@@ -890,9 +906,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     transition: .3s;
 }
 .footer-social a {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    width: 48px; /* 增加社交圖標的寬度 */
+    height: 48px; /* 增加社交圖標的高度 */
+    line-height: 48px; /* 調整行高以居中對齊 */
+    margin: 8px; /* 增加間距 */
     background: #eef2f6;
     text-align: center;
     border-radius: 50%;

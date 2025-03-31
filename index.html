@@ -5,11 +5,12 @@
         <!-- meta data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="Discover the best places, restaurants, hotels, and more with our directory landing page. Explore and find everything you need in one click.">
 
         <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="assets/fonts/poppins.css">
         
         <!-- title of site -->
         <title>Directory Landing Page</title>
@@ -40,7 +41,8 @@
 		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
         
         <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -52,6 +54,24 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
+        <style>
+            /* 提高按鈕文字與背景的對比度 */
+            .welcome-hero-btn, .how-work-btn, .close-btn, .open-btn {
+                color: #ffffff; /* 確保文字顏色為白色 */
+                background-color: #0056b3; /* 提高背景顏色的對比度 */
+            }
+
+            /* 提高標題文字與背景的對比度 */
+            h2, h3, h4 {
+                color: #222222; /* 使用更深的文字顏色以提高對比度 */
+            }
+
+            /* 提高 footer 文字與背景的對比度 */
+            .footer-menu-item a, .hm-footer-copyright p {
+                color: #ffffff; /* 確保文字顏色為白色 */
+            }
+        </style>
 
     </head>
 	
@@ -67,6 +87,7 @@
 					<div class="header-top-left">
 						<ul>
 							<li class="select-opt">
+								<label for="language">Language:</label>
 								<select name="language" id="language">
 									<option value="default">EN</option>
 									<option value="Bangla">BN</option>
@@ -74,6 +95,7 @@
 								</select>
 							</li>
 							<li class="select-opt">
+								<label for="currency">Currency:</label>
 								<select name="currency" id="currency">
 									<option value="usd">USD</option>
 									<option value="euro">Euro</option>
@@ -81,7 +103,7 @@
 								</select>
 							</li>
 							<li class="select-opt">
-								<a href="#"><span class="lnr lnr-magnifier"></span></a>
+								<a href="#" aria-label="Search"><span class="lnr lnr-magnifier"></span></a>
 							</li>
 						</ul>
 					</div>
@@ -156,7 +178,7 @@
 				<div class="welcome-hero-serch-box">
 					<div class="welcome-hero-form">
 						<div class="single-welcome-hero-form">
-							<h3>what?</h3>
+							 <h2>what?</h2>
 							<form action="index.html">
 								<input type="text" placeholder="Ex: palce, resturent, food, automobile" />
 							</form>
@@ -165,7 +187,7 @@
 							</div>
 						</div>
 						<div class="single-welcome-hero-form">
-							<h3>location</h3>
+							 <h2>location</h2>
 							<form action="index.html">
 								<input type="text" placeholder="Ex: london, newyork, rome" />
 							</form>
@@ -246,7 +268,7 @@
 		<section id="works" class="works">
 			<div class="container">
 				<div class="section-header">
-					<h2>how it works</h2>
+					 <h1>how it works</h1>
 					<p>Learn More about how our website works</p>
 				</div><!--/.section-header-->
 				<div class="works-content">
@@ -304,7 +326,7 @@
 		<section id="explore" class="explore">
 			<div class="container">
 				<div class="section-header">
-					<h2>explore</h2>
+					 <h1>explore</h1>
 					<p>Explore New place, food, culture around the world and many more</p>
 				</div><!--/.section-header-->
 				<div class="explore-content">
@@ -509,6 +531,7 @@
 						</div>
 						<div class=" col-md-4 col-sm-6">
 							<div class="single-explore-item">
+								
 								<div class="single-explore-img">
 									<img src="assets/images/explore/e4.webp" alt="explore image">
 									<div class="single-explore-img-info">
@@ -715,7 +738,7 @@
 		<!--reviews start -->
 		<section id="reviews" class="reviews">
 			<div class="section-header">
-				<h2>clients reviews</h2>
+				 <h1>clients reviews</h1>
 				<p>What our client say about us</p>
 			</div><!--/.section-header-->
 			<div class="reviews-content">
@@ -972,7 +995,7 @@
 		<section id="blog" class="blog" >
 			<div class="container">
 				<div class="section-header">
-					<h2>news and articles</h2>
+					 <h1>news and articles</h1>
 					<p>Always upto date with our latest News and Articles </p>
 				</div><!--/.section-header-->
 				<div class="blog-content">
@@ -1030,9 +1053,9 @@
 		<section id="contact"  class="subscription">
 			<div class="container">
 				<div class="subscribe-title text-center">
-					<h2>
+					 <h1>
 						do you want to add your business listing with us?
-					</h2>
+					</h1>
 					<p>
 						Listrace offer you to list your business with us and we very much able to promote your Business.
 					</p>
@@ -1086,10 +1109,10 @@
 						<div class="col-sm-7">
 							<div class="footer-social">
 								<span><i class="fa fa-phone"> +1  (222) 777 8888</i></span>
-								<a href="#"><i class="fa fa-facebook"></i></a>	
-								<a href="#"><i class="fa fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-linkedin"></i></a>
-								<a href="#"><i class="fa fa-google-plus"></i></a>
+								<a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a>	
+								<a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+								<a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+								<a href="#" aria-label="Google Plus"><i class="fa fa-google-plus"></i></a>
 							</div>
 						</div>
 					</div>
@@ -1109,31 +1132,31 @@
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/jquery.js" defer></script>
         
         <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" defer></script>
 		
 		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js" defer></script>
 		
 		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
+		<script src="assets/js/bootsnav.js" defer></script>
 
         <!--feather.min.js-->
-        <script  src="assets/js/feather.min.js"></script>
+        <script  src="assets/js/feather.min.js" defer></script>
 
         <!-- counter js -->
-		<script src="assets/js/jquery.counterup.min.js"></script>
-		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js" defer></script>
+		<script src="assets/js/waypoints.min.js" defer></script>
 
         <!--slick.min.js-->
-        <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/slick.min.js" defer></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
 		     
         <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/custom.js" defer></script>
         
     </body>
 	
