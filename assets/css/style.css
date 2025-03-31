@@ -675,15 +675,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 /*-------------------------------------       
         9.  Counter
 --------------------------------------*/
-/*.statistics{*/
-/*    position:relative;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    background:url(../../assets/images/counter/counter-banner.jpg)no-repeat fixed;*/
-/*    background-position:center;*/
-/*    background-size:cover;*/
-/*    padding:127px 0 120px;*/
-/*}*/
+.statistics{
+    position:relative;
+    display: flex;
+    align-items: center;
+    /*background:url(../../assets/images/counter/counter-banner.jpg)no-repeat fixed;*/
+    background-position:center;
+    background-size:cover;
+    padding:127px 0 120px;
+}
 .statistics:before{
     position:absolute;
     content:'';
