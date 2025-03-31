@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
+
+/*==================================
 * Author        : "ThemeSine"
 * Template Name : Listrace directory HTML Template
 * Version       : 1.0
@@ -16,6 +16,7 @@ $(document).ready(function(){
 3. welcome animation support
 4. feather icon
 5. counter
+6. Global error handling
 ======================================*/
 
     // 1. Scroll To Top 
@@ -99,9 +100,28 @@ $(document).ready(function(){
 				delay: 10,
 				time: 3000
 			});	
-			// 移除 Google Analytics 的第三方 Cookie 設置
-			// gtag('config', 'GA_TRACKING_ID', { 'cookie_flags': 'SameSite=None;Secure' });
-			// 或者考慮使用無 Cookie 的分析工具，如 Plausible 或 Matomo
+			 // Confirmed cookie-related code is removed to avoid using cookies
+		 });
+
+	// 6. Global error handling
+	window.onerror = function(message, source, lineno, colno, error) {
+		console.error("Error occurred:", {
+			message: message,
+			source: source,
+			lineno: lineno,
+			colno: colno,
+			error: error
 		});
+	};
+
+	// Add network error handling
+	$(document).ajaxError(function(event, jqxhr, settings, thrownError) {
+		console.error("AJAX error occurred:", {
+			url: settings.url,
+			status: jqxhr.status,
+			statusText: jqxhr.statusText,
+			error: thrownError
+		});
+	});
 
 });
