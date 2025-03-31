@@ -39,22 +39,22 @@ font-family: 'Roboto', sans-serif;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-body{
-	font-family: 'Poppins', sans-serif;
-	font-size:14px;
-	color:#000000; /* Black font color for maximum contrast */
-    text-transform:initial;
-    max-width:1920px;
-    margin:0 auto;
-	overflow-x:hidden;
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #000000; /* Black font color for maximum contrast */
+    text-transform: initial;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 button, a {
-    min-width: 48px; /* 確保觸控目標的最小寬度 */
-    min-height: 48px; /* 確保觸控目標的最小高度 */
-    margin: 8px; /* 增加間距以避免目標過於接近 */
+    min-width: 48px; /* Ensure minimum touch target size */
+    min-height: 48px; /* Ensure minimum touch target size */
+    margin: 8px; /* Add spacing to avoid targets being too close */
     color: #000000; /* Black font color for buttons */
-    /* background-color: #0056b3; 提高背景顏色的對比度 */
+    background-color: #0056b3; /* Improve background color contrast */
 }
 
 a,a:hover,a:active,a:focus {

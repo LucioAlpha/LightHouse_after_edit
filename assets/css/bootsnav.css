@@ -45,7 +45,7 @@ nav.navbar.bootsnav {
 }
 
 nav.navbar.bootsnav ul.nav > li > a {
-    color: #333333; /* Darker text color for better contrast */
+    color: #222222; /* Darker text color for better contrast */
     background-color: transparent;
     margin-bottom: -2px;
 }
@@ -134,7 +134,7 @@ nav.bootsnav.navbar-full .navbar-collapse ul.nav > li > a {
 }
 
 .attr-nav > ul > li > a {
-    color: #333333; /* Darker text color for better contrast */
+    color: #222222; /* Darker text color for better contrast */
     display: block;
     padding: 28px 15px;
     position: relative;

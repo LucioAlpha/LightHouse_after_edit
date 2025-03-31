@@ -67,6 +67,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
+  color: #000000; /* Ensure text color has sufficient contrast */
 }
 /* 
 @-webkit-keyframes flash {
@@ -92,6 +93,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
+  color: #000000; /* Ensure text color has sufficient contrast */
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
