@@ -53,8 +53,8 @@ button, a {
     min-width: 48px; /* 確保觸控目標的最小寬度 */
     min-height: 48px; /* 確保觸控目標的最小高度 */
     margin: 8px; /* 增加間距以避免目標過於接近 */
-    color: #ffffff; /* 確保按鈕文字顏色為白色 */
-    background-color: #0056b3; /* 提高背景顏色的對比度 */
+    /* color: #ffffff; 確保按鈕文字顏色為白色 */
+    /* background-color: #0056b3; 提高背景顏色的對比度 */
 }
 
 a,a:hover,a:active,a:focus {
